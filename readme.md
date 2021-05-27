@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Илья](https://up.htmlacademy.ru/htmlcss/31/user/1332139).
-* Наставник: [Дмитрий Гуляев](https://up.htmlacademy.ru/htmlcss/31/user/87930).
+* Наставник: [Лиза Пак](https://up.htmlacademy.ru/htmlcss/31/user/5608).
 
 ---
 
