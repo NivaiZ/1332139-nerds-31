@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип шапки">
-            </a>
+            <a href="index.html"><img src="img/header/nerdslogo.svg" width="159" height="65" alt="Логотип шапки"></a>
+
             <ul>
                 <li><a href="blank.html">Студия</a></li>
                 <li><a href="blank/html">Клиенты</a></li>
@@ -28,64 +28,89 @@
     </header>
     <!--main-->
     <main>
+
         <h1>Магазин готовых шаблоннов</h1>
-        <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-                <legend>Стоимость:</legend>
-                <button type="button"></button>
-                <button type="button"></button>
-                <label>
-          <input type="number" value="0">
+
+        <fieldset>
+            <legend>Стоимость:</legend>
+
+            <label>От:
+          <input type="number" name="min-price" value="0">
         </label>
-                <label>
-          <input type="number" value="15000">
+
+            <label>До:
+          <input type="number" name="max-price" value="15000">
         </label>
-            </fieldset>
 
-            <fieldset>
+        </fieldset>
 
-                <legend>Сетка:</legend>
-                <ul>
-                    <li>
-                        <input type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
-                        <label for="filter-adaptiv">Адаптивная</label>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <input type="radio" name="choose-group" value="fix" id="filter-fix">
-                        <label for="filter-fix">Фиксированная</label>
-                    </li>
-                </ul>
+        <fieldset>
 
-                <ul>
-                    <li>
-                        <input type="radio" name="choose-group" value="rubber" id="filter-rubber">
-                        <label for="filter-rubber">Резинновая</label>
-                    </li>
-                </ul>
+            <legend>Сетка:</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
+                    <label for="filter-adaptiv">Адаптивная</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="choose-group" value="fix" id="filter-fix">
+                    <label for="filter-fix">Фиксированная</label>
+                </li>
+            </ul>
 
-            </fieldset>
+            <ul>
+                <li>
+                    <input type="radio" name="choose-group" value="rubber" id="filter-rubber">
+                    <label for="filter-rubber">Резинновая</label>
+                </li>
+            </ul>
 
-            <fieldset>
+        </fieldset>
 
-                <legend>Особенности:</legend>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-                <input type="checkbox" name="advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-slider">Новости</label>
-                <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-slider">Галерея</label>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label for="filter-slider">Корзина</label>
+        <fieldset>
 
-            </fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="slider" id="filter-slider" checked>
+                    <label for="filter-slider">Слайдер</label>
+                </li>
+            </ul>
 
-            <button type="submit">Показать</button>
-        </form>
+            <ul>
+                <li>
+                    <input type="checkbox" name="advantages" id="filter-advantages">
+                    <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+            </ul>
 
+            <ul>
+                <li>
+                    <input type="checkbox" name="news" id="filter-news" checked>
+                    <label for="filter-slider">Новости</label>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="filter-slider">Галерея</label>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="basket" id="filter-basket">
+                    <label for="filter-slider">Корзина</label>
+                </li>
+            </ul>
+
+
+        </fieldset>
+
+        <button type="submit">Показать</button>
 
         <section>
             <h2>Каталог шаблоннов</h2>
@@ -99,11 +124,11 @@
 
             <ul>
                 <li>
-                    <a href="blank.html"><img src="https://via.placeholder.com/11x10" width="11" height="10" alt=""></a>
+                    <a href="blank.html"><img src="img/catalogmain/icondown.svg" width="11" height="10" alt="Стрелка вверх"></a>
                 </li>
 
                 <li>
-                    <a href="blank.html"> <img src="https://via.placeholder.com/11x10" width="11" height="10" alt=""></a>
+                    <a href="blank.html"> <img src="img/catalogmain/iconup.svg" width="11" height="10" alt="Стрелка вниз"></a>
                 </li>
             </ul>
 
@@ -201,23 +226,25 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="img/footer/vklogo.svg" width="81" height="81" alt="Иконка Вконтакте">
+                        <img src="img/footer/vkicon.svg" width="26" height="15" alt="Иконка Вконтакте">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/footer/fblogo.svg" width="81" height="81" alt="Иконка Фейсбука">
+                        <img src="img/footer/fbicon.svg" width="12" height="22" alt="Иконка Фейсбука">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="img/footer/instlogo.svg" width="81" height="81" alt="Иконка Инстаграма">
+                        <img src="img/footer/instaicon.svg" width="21" height="21" alt="Иконка Инстаграма">
                     </a>
+                </li>
             </ul>
         </section>
     </footer>
 
     <section>
+        <button type="button">Закрыть</button>
         <form action="https://echo.htmlacademy.ru" method="post">
 
             <label for="appointment-name">Ваше имя:</label>
@@ -230,7 +257,6 @@
             <input id="appointment-letter" type="text" name="letter" placeholder="В свободное форме">
 
             <button type="submit">Отправить</button>
-            <button type="button">Закрыть</button>
         </form>
     </section>
 </body>
