@@ -18,10 +18,8 @@
                 <li><a href="blank/html">Клиенты</a></li>
                 <li><a href="blank.html">Магазин</a></li>
                 <li><a href="blank/html">Контакты</a></li>
-                <li>
-                    <a href="blank.html"><img src="https://via.placeholder.com/15x15" width="15" height="15" alt="">Корзина</a>
-                </li>
             </ul>
+            <a href="blank.html">Корзина</a>
         </nav>
     </header>
     <!--main-->
@@ -33,22 +31,35 @@
                 <button type="button"></button>
                 <button type="button"></button>
                 <label>
-            <input type="text" value="0"> 
+          <input type="number" value="0">
         </label>
                 <label>
-        <input type="text" value="15000">
+          <input type="number" value="15000">
         </label>
             </fieldset>
 
             <fieldset>
 
                 <legend>Сетка:</legend>
-                <input type="radio" name="choose-group" value="grid" id="filter-adaptiv" checked>
-                <label for="filter-adaptiv">Адаптивная</label>
-                <input type="radio" name="choose-group" value="grid" id="filter-fix">
-                <label for="filter-fix">Фиксированная</label>
-                <input type="radio" name="choose-group" value="grid" id="filter-rubber">
-                <label for="filter-rubber">Резинновая</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
+                        <label for="filter-adaptiv">Адаптивная</label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="radio" name="choose-group" value="fix" id="filter-fix">
+                        <label for="filter-fix">Фиксированная</label>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <input type="radio" name="choose-group" value="rubber" id="filter-rubber">
+                        <label for="filter-rubber">Резинновая</label>
+                    </li>
+                </ul>
 
             </fieldset>
 
@@ -75,13 +86,18 @@
         <section>
             <h2>Каталог шаблоннов</h2>
             <p>Сортировать:</p>
+
             <ul>
                 <li><a href="blank.html">По цене</a></li>
                 <li><a href="blank.html">По типу</a></li>
                 <li><a href="blank.html">По названию</a></li>
+            </ul>
+
+            <ul>
                 <li>
                     <a href="blank.html"><img src="https://via.placeholder.com/11x10" width="11" height="10" alt=""></a>
                 </li>
+
                 <li>
                     <img src="https://via.placeholder.com/11x10" width="11" height="10" alt="">
                 </li>
@@ -89,58 +105,70 @@
 
             <ul>
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Sedona">
-                    <a href="blank.html">
-                        <h3>Sedona</h3>
-                    </a>
-                    <p>Информационный сайт для туристов</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Sedona">
+                        <a href="blank.html">
+                            <h3>Sedona</h3>
+                        </a>
+                        <p>Информационный сайт для туристов</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
 
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Pink app">
-                    <a href="blank.html">
-                        <h3>Pink app</h3>
-                    </a>
-                    <p>Продуктовый лендинг приложения для iOS и Android</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Pink app">
+                        <a href="blank.html">
+                            <h3>Pink app</h3>
+                        </a>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
 
 
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="359" height="578" alt="Barbershop">
-                    <a href="blank.html">
-                        <h3>Barbershop</h3>
-                    </a>
-                    <p>Мужской салон крутых стрижек</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="359" height="578" alt="Barbershop">
+                        <a href="blank.html">
+                            <h3>Barbershop</h3>
+                        </a>
+                        <p>Мужской салон крутых стрижек</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
 
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Mishka">
-                    <a href="blank.html">
-                        <h3>Mishka</h3>
-                    </a>
-                    <p>Всё для handmade</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="Mishka">
+                        <a href="blank.html">
+                            <h3>Mishka</h3>
+                        </a>
+                        <p>Всё для handmade</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
 
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="A+">
-                    <a href="blank.html">
-                        <h3>A+</h3>
-                    </a>
-                    <p>Продуктовый лендинг обучающих курсов</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="358" height="578" alt="A+">
+                        <a href="blank.html">
+                            <h3>A+</h3>
+                        </a>
+                        <p>Продуктовый лендинг обучающих курсов</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
 
                 <li>
-                    <img src="https://via.placeholder.com/359x579" width="359" height="579" alt="Кваст">
-                    <a href="blank.html">
-                        <h3>Кваст</h3>
-                    </a>
-                    <p>Магазин крафтовых продуктов</p>
-                    <a href="blank.html">9 900 ₽</a>
+                    <div>
+                        <img src="https://via.placeholder.com/359x579" width="359" height="579" alt="Кваст">
+                        <a href="blank.html">
+                            <h3>Кваст</h3>
+                        </a>
+                        <p>Магазин крафтовых продуктов</p>
+                        <a href="blank.html">9 900 ₽</a>
+                    </div>
                 </li>
             </ul>
 
@@ -183,22 +211,17 @@
     <section>
         <form action="https://echo.htmlacademy.ru" method="post">
 
-            <p>Ваше имя:
-                <label for="appointment-name"></label>
-                <input id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
-            </p>
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
 
+            <label for="appointment-email">Ваш email:</label>
+            <input id="appointment-email" type="text" name="email" placeholder="email@example.ru" required>
 
-            <p>Ваше email:
-                <label for="appointment-email"></label>
-                <input id="appointment-email" type="text" name="email" placeholder="email@example.ru" required>
-            </p>
+            <label for="appointment-letter">Текст письма:</label>
+            <input id="appointment-letter" type="text" name="letter" placeholder="В свободное форме">
 
-            <p>Текст письма:
-                <label for="appointment-letter"></label>
-                <input id="appointment-letter" type="text" name="letter" placeholder="В свободное форме">
-            </p>
             <button type="submit">Отправить</button>
+            <button type="button">Закрыть</button>
         </form>
     </section>
 </body>
