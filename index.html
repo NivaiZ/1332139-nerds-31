@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <!--head-->
 
 <head>
@@ -13,90 +13,93 @@
 </head>
 <!--body-->
 
-<body>
-    <header>
-        <nav>
-            <a><img src="img/header/nerdslogo.svg" width="160" height="66" alt="Логотип шапки"></a>
-            <ul>
+<body class="page-body">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/header/nerdslogo.svg" width="160" height="66" alt="Логотип шапки">
+            </a>
+            <ul class="site-navigation">
                 <li><a href="blank.html">Студия</a></li>
                 <li><a href="blank/html">Клиенты</a></li>
                 <li><a href="blank.html">Магазин</a></li>
                 <li><a href="blank/html">Контакты</a></li>
             </ul>
-            <a href="blank.html">Корзина</a>
+            <a class="login-link" href="blank.html">Корзина</a>
         </nav>
 
     </header>
     <!--main-->
-    <main>
+    <main class="wrapper-content">
         <h1>Сайт дизайн-студии Нёрдс</h1>
-        <section>
-            <ul>
-                <li>
+        <section class="slider">
+            <ul class="slider-item">
+                <li class="slider-list">
                     <p>Долго, дорого, скрупулезно</p>
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                    <a href="blank.html">Узнать больше</a>
+                    <a class="btn" href="blank.html">Узнать больше</a>
                 </li>
 
-                <li>
+                <li class="slider-list">
                     <p>Любим математику как никто другой
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
                         <a href="blank.html">Узнать больше</a>
 
                 </li>
-                <li>
+                <li class="slider-list">
                     <p>Только ночь,только хардкор</p>
                     <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-                    <a href="blank.html">Узнать больше</a>
+                    <a class="btn" href="blank.html">Узнать больше</a>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="slider">
             <h2>Услуги</h2>
-            <ul>
+            <ul class="slider-item">
 
-                <li>
+                <li class="slider-list">
                     <img src="img/main/notebook.jpg" width="300" height="146" alt="Изображение компьютера на красной фоне">
                     <h3>Веб-сайты</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="blank.html">Заказать</a>
+                    <a class="btn" href="blank.html">Заказать</a>
 
                 </li>
 
 
-                <li>
+                <li class="slider-list">
                     <img src="img/main/phone.jpg" width="300" height="146" alt="Изображение двух телефонов на зелёном фоне">
                     <h3>Приложения</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a href="blank.html">Заказать</a>
+                    <a class="btn" href="blank.html">Заказать</a>
                 </li>
 
-                <li>
+                <li class="slider-list">
                     <img src="img/main/plan.jpg" width="300" height="146" alt="Изображение презентации на компьютере">
                     <h3>Презентации</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a href="blank.html">Заказать</a>
+                    <a class="btn" href="blank.html">Заказать</a>
 
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="worth">
+            <h2>Ценности</h2>
             <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <p>Выполняем заказы на разработку:</p>
 
-            <ul>
-                <li> Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <ul class="worth-list">
+                <li class="worth-item"> Веб-сайтов любой сложности</li>
+                <li class="worth-item">Мобильных приложений для iOS и Android</li>
+                <li class="worth-item">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
 
             <img src="img/main/nerdsillustration.jpg" width="360" height="208" alt="Логотип студии в цвете">
 
             <p>с 2004 года любим точность во всем:</p>
-            <dl>
+            <dl class="arrangement">
                 <dt>146%</dt>
                 <dd>Уровень самоотдачи</dd>
                 <dt>100%</dt>
@@ -105,7 +108,7 @@
                 <dd>Минимальная предоплата</dd>
             </dl>
         </section>
-        <section>
+        <section class="portfolio">
             <a href="blank.html"><img src="img/client/htmlacademy.svg" width="199" height="57" alt="Изображение html academy"></a>
             <a href="blank.html"><img src="img/client/borodinski.svg" width="209" height="90" alt="Изображение барбешопа Борадинский"></a>
             <a href="blank.html"><img src="img/client/pink.svg" width="185" height="52" alt="Изображение сайта pink"></a>
@@ -113,31 +116,32 @@
 
         </section>
     </main>
-    <footer>
 
-        <section>
+    <footer class="page-footer main-footer">
+
+        <section class="contacts">
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-            <p>Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <a href="blank.html">Напишите нам</a>
+            <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+            <a class="btn" href="blank.html">Напишите нам</a>
         </section>
 
-        <section>
+        <section class="contact-discount">
             <h2>Давайте дружить!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
             <ul>
                 <li>
-                    <a href="#">
+                    <a class="social-button" href="#">
                         <img src="img/footer/vkicon.svg" width="26" height="15" alt="Иконка Вконтакте">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a class="social-button" href="#">
                         <img src="img/footer/fbicon.svg" width="12" height="22" alt="Иконка Фейсбука">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a class="social-button" href="#">
                         <img src="img/footer/instaicon.svg" width="21" height="21" alt="Иконка Инстаграма">
                     </a>
                 </li>
@@ -145,20 +149,20 @@
         </section>
     </footer>
     <!--Можно сделать с h2 скрытым заголовком-->
-    <section>
-        <button type="button">Закрыть</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal">
+        <button class="modal-close" type="button">Закрыть</button>
+        <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
 
             <label for="appointment-name">Ваше имя:</label>
-            <input id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+            <input class="login-icon-name" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
 
             <label for="appointment-email">Ваш email:</label>
-            <input id="appointment-email" type="text" name="email" placeholder="email@example.ru" required>
+            <input class="login-icon-email" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
 
-            <label for="appointment-letter">Текст письма:</label>
-            <input id="appointment-letter" type="text" name="letter" placeholder="В свободное форме">
+            <label for="appointment-text">Текст письма:</label>
+            <textarea id="appointment-text" name="appointment-text" placeholder="В свободной форме"></textarea>
 
-            <button type="submit">Отправить</button>
+            <button class="btn" type="submit">Отправить</button>
 
         </form>
     </section>
