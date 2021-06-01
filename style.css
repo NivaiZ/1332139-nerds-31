@@ -1,0 +1,23 @@
+:root {
+    --basic-ligth: #EEEEEE;
+    --basic-dark: #000000;
+    --basic-white: #FFFFFF;
+    --basic-red: #FB565A;
+    --basic-green: #00CA74;
+    --basic-yellow: #EFC849;
+    --basic-special: #888888;
+}
+
+body {
+    min-width: 1036px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-special);
+    text-transform: uppercase;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
