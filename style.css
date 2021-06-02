@@ -1,4 +1,13 @@
-:root {
+/* Variables */
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local(roboto), url("/fonts/roboto.woff2") format("woff2"), url("/fonts/roboto.woff") format("woff");
+}
+
+ :root {
     --basic-ligth: #EEEEEE;
     --basic-dark: #000000;
     --basic-white: #FFFFFF;
@@ -6,18 +15,96 @@
     --basic-green: #00CA74;
     --basic-yellow: #EFC849;
     --basic-special: #888888;
+    --basic-extra-dark: #283136;
 }
 
+
+/* Global */
+
 body {
-    min-width: 1036px;
+    min-width: 1250px;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--basic-special);
+    color: var(--basic-dark);
     text-transform: uppercase;
     background-position: absolute;
     background-repeat: no-repeat;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.main-header-logo {
+    position: absolute;
+    width: 159.87px;
+    height: 65.02px;
+    left: 140px;
+    top: 48.98px;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.basket {
+    color: var(--basic-dark);
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active,
+.basket:hover,
+.basket:focus {
+    color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.basket:active {
+    color: var(--basic-special);
+}
+
+.main-header-logo:hover {
+    color: var(--basic-special);
+    opacity: 70%;
+}
+
+.main-header-logo:active,
+.main-header-logo:focus {
+    opacity: 30%;
+}
+
+.slider-list {
+    list-style: none;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button-wrapper-content:hover,
+.button-wrapper-content:focus,
+.button-wrapper-content:active {
+    color: var(--basic-red);
+}
+
+.button-wrapper-content {
+    text-decoration: none;
+}
+
+.slider-wrapper-list {
+    text-decoration: none;
+    list-style: none;
 }
