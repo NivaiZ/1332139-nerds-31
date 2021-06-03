@@ -55,6 +55,7 @@ body {
 
 .site-navigation {
     list-style: none;
+    display: flex;
 }
 
 .basket {
@@ -99,6 +100,7 @@ body {
     align-items: center;
     font-size: 16px;
     line-height: 24px;
+    display: flex;
 }
 
 .button-wrapper-content:hover,
@@ -115,6 +117,7 @@ body {
     text-decoration: none;
     list-style: none;
     position: inherit;
+    display: flex;
 }
 
 .slider-button-red {
