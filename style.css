@@ -21,7 +21,7 @@
                 }
                 
                 body {
-                    min-width: 1250px;
+                    min-width: 1200px;
                     margin: 0px;
                     padding: 0px;
                     font-family: "Roboto", "Arial", sans-serif;
@@ -29,6 +29,12 @@
                     line-height: 24px;
                     font-weight: 400;
                     color: var(--basic-dark);
+                }
+                
+                .main-header-logo {
+                    padding-top: 48px;
+                    padding-right: 202px;
+                    padding-left: 140px;
                 }
                 
                 .button {
@@ -49,6 +55,7 @@
                 
                 .main-header {
                     background-color: var(--basic-grey-bg);
+                    height: 114px;
                 }
                 
                 .wrapper-hidden {
@@ -59,9 +66,9 @@
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 30px;
-                    align-items: center;
                     text-transform: uppercase;
                     display: flex;
+                    width: 1200px;
                 }
                 
                 .main-header-logo:hover {
@@ -78,6 +85,12 @@
                     list-style: none;
                     background-color: var(--basic-grey-bg);
                     display: flex;
+                    padding: 0;
+                    padding-top: 60px;
+                    padding-right: 245px;
+                    flex-wrap: wrap;
+                    justify-content: start;
+                    flex-wrap: wrap;
                 }
                 
                 .site-navigation a,
@@ -100,12 +113,13 @@
                 }
                 
                 .basket {
-                    width: 75px;
-                    height: 30px;
-                    left: 1224.84px;
-                    top: 75px;
-                    position: absolute;
-                    display: flex;
+                    line-height: 30px;
+                    margin-top: 76px;
+                    margin-bottom: 0;
+                    padding: 0;
+                    list-style: none;
+                    text-transform: uppercase;
+                    line-height: 30px;
                 }
                 
                 .main-content {
@@ -261,5 +275,11 @@
                 .button:active,
                 .button:focus {
                     opacity: 30%;
-                    ;
+                }
+                /* catalog */
+                
+                .main-heading {
+                    text-align: center;
+                    background-color: var(--basic-grey-bg);
+                    background-color: transparent;
                 }
