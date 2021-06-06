@@ -58,10 +58,6 @@
                     height: 114px;
                 }
                 
-                .wrapper-hidden {
-                    display: none;
-                }
-                
                 .main-navigation {
                     font-weight: 500;
                     font-size: 16px;
@@ -123,7 +119,6 @@
                 }
                 
                 .main-content {
-                    display: none;
                     background-color: var(--basic-grey-bg);
                 }
                 
@@ -158,10 +153,6 @@
                 
                 .button-wrapper-content {
                     text-decoration: none;
-                }
-                
-                .slider-hidden {
-                    display: none;
                 }
                 
                 .slider-wrapper-list {
@@ -200,10 +191,6 @@
                 .slider-button-green:focus,
                 .slider-button-yellow:focus {
                     color: var(--basic-special)
-                }
-                
-                .worth-hidden {
-                    display: none;
                 }
                 
                 .worth-description-title {
@@ -275,6 +262,10 @@
                 .button:active,
                 .button:focus {
                     opacity: 30%;
+                }
+                
+                .wrapper-hidden {
+                    visibility: hidden;
                 }
                 /* catalog */
                 
