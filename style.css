@@ -94,8 +94,9 @@
             font-size: 16px;
             line-height: 30px;
             text-transform: uppercase;
-            display: flex;
             width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr min-content;
         }
         
         .main-header-logo:hover {
@@ -355,13 +356,12 @@
             opacity: 90%;
         }
         
-        .sort-list,
-        .sort-type {
+        .sort-list {
             font-weight: 700;
             font-style: normal;
             font-size: 18px;
             line-height: 30px;
-            display: flex;
+            text-decoration: none;
         }
         
         .sort-type {
@@ -369,8 +369,34 @@
             font-size: 14px;
             line-height: 18px;
             list-style: none;
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            text-align: center;
+            margin: -40px 20px;
+            outline: 5px solid rgb(255, 0, 212);
+            outline-offset: -5px;
+        }
+        
+        .sort-height {
+            text-align: end;
+            padding: -30px;
+        }
+        
+        .examples-work {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            column-gap: 42px;
+            align-items: stretch;
+            outline: 5px solid rgba(0, 255, 255, 0.7);
+            outline-offset: -5px;
+        }
+        
+        .general-pagination {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: stretch;
+            outline: 5px solid rgba(0, 255, 255, 0.7);
+            outline-offset: -5px;
         }
         
         .catalog-popup-caption {
@@ -386,6 +412,8 @@
         .grid-option,
         .checkbox-option,
         .sort-list-up,
-        .sort-list-down {
+        .sort-list-down,
+        .sort-type,
+        .sort-height {
             list-style: none;
         }
