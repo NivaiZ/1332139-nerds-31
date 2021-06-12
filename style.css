@@ -33,6 +33,10 @@
             line-height: 24px;
             font-weight: 400;
             color: var(--basic-dark);
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: min-content 1fr min-content;
+            align-content: start;
         }
         
         .wrapper-heading {
@@ -40,6 +44,10 @@
             font-size: 24px;
             line-height: 30px;
             text-transform: uppercase;
+        }
+        
+        .page {
+            height: 100%;
         }
         
         .termin-group {
@@ -70,6 +78,16 @@
             background-color: var(--basic-grey-bg);
             padding: 0px;
             margin: 0px;
+            outline: 5px solid rgba(0, 255, 0, 0.7);
+            outline-offset: -5px;
+        }
+        
+        .main-header-logo {
+            outline: 5px solid rgba(2, 219, 248, 0.3);
+            outline-offset: -5px;
+            display: grid;
+            padding: 5px auto;
+            margin: 20px auto;
         }
         
         .main-navigation {
@@ -87,10 +105,11 @@
         
         .site-navigation {
             list-style: none;
-            display: flex;
-            justify-content: space-between;
-            width: 437px;
-            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr min-content;
+            grid-gap: 90px;
+            padding: 0px;
+            margin: 0px;
             font-weight: 500;
             color: var(--basic-dark);
             line-height: 30px;
@@ -109,24 +128,31 @@
         }
         
         .basket {
+            display: grid;
+            grid-template-columns: min-content;
+            padding: 0px 65px;
+            margin: 0px;
             line-height: 30px;
-            margin: auto;
             list-style: none;
-            display: flex;
             align-items: center;
-            text-align: right;
             font-weight: 500;
+            outline: 5px solid rgba(2, 27, 248, 0.3);
+            outline-offset: -5px;
         }
         
         .slider-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 90px;
             list-style: none;
             align-items: center;
             font-size: 16px;
             line-height: 24px;
             background-color: var(--basic-grey-bg);
-            display: flex;
-            padding: 0px;
+            padding: 0px 10px;
             margin: 0px;
+            outline: 5px solid rgba(1, 5, 248, 0.3);
+            outline-offset: -5px;
         }
         
         .slider-big {
@@ -137,12 +163,14 @@
         }
         
         .slider-wrapper-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             text-decoration: none;
             list-style: none;
             margin: 0px;
-            padding: 0px;
-            display: flex;
-            justify-content: space-around;
+            padding: 0px 10px;
+            outline: 5px solid rgb(182, 248, 1);
+            outline-offset: -5px;
         }
         
         .button-colors-web,
@@ -230,19 +258,39 @@
         }
         
         .worth-description-title {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             font-weight: 500;
             font-size: 45px;
             line-height: 45px;
-            margin: 19px;
-            padding-left: 50px;
+            padding: 0px 10px;
+            margin: 0px 10px;
         }
         
-        .worth-description-text,
-        .worth-list {
+        .worth {
+            display: grid;
+            margin: 0px;
+            padding: 0px;
+            outline: 5px solid rgba(0, 7, 0, 0.7);
+            outline-offset: -5px;
+        }
+        
+        .worth-description-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
             font-size: 16px;
             line-height: 24px;
             color: var(--basic-extra-dark);
             list-style: none;
+            margin: 30px;
+            padding: 10px;
+        }
+        
+        .worth-list {
+            list-style: none;
+            margin: 30px;
+            padding: 10px;
         }
         
         .worth-description-commercial,
@@ -253,6 +301,13 @@
             font-size: 16px;
             line-height: 24px;
             text-transform: uppercase;
+            padding: 0px 5px;
+            margin: 0px 10px;
+        }
+        
+        .portfolio-wrapper-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         
         .contact-phone {
@@ -262,6 +317,22 @@
         
         .wrapper-hidden {
             visibility: hidden;
+        }
+        
+        .social-web {
+            display: grid;
+            grid-column: 1 / -1;
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .contact-discount {
+            display: grid;
+            grid-column: 1 / -1;
+            outline: 5px solid rgba(255, 0, 0, 0.7);
+            outline-offset: -5px;
+            background-color: var(--basic-yellow);
         }
         /* catalog */
         
@@ -314,7 +385,6 @@
         .general-pagination,
         .grid-option,
         .checkbox-option,
-        .social-web,
         .sort-list-up,
         .sort-list-down {
             list-style: none;
