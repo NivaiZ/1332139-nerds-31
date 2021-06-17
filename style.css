@@ -18,6 +18,7 @@
         --basic-shadow-yellow: #E5A722;
         --basic-extra-white: #DFDFDF;
         --basic-shadow-white: #D5D5D5;
+        --basic-pagination-first: #DBDBDB;
     }
     
     a {
@@ -25,9 +26,12 @@
         color: var(--basic-dark);
     }
     
-    body {
+    .page-body {
         min-width: 1200px;
-        padding: 0px;
+        min-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-right: auto;
         font-family: "Roboto", "Arial", sans-serif;
         font-size: 16px;
         line-height: 24px;
@@ -263,7 +267,10 @@
     
     .worth {
         display: grid;
-        grid-template-columns: 1fr min-content 1fr;
+        grid-template-columns: 1fr 1fr min-content;
+        box-sizing: border-box;
+        padding-bottom: 73px;
+        color: var(--basic-dark);
         border-top: 2px solid var(--basic-ligth);
         /*outline: 5px solid rgba(0, 7, 0, 0.7);
     outline-offset: -5px;  */
@@ -306,11 +313,18 @@
         font-size: 16px;
         line-height: 24px;
         text-transform: uppercase;
+        padding-bottom: 24px;
     }
     
     .portfolio-wrapper-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        box-sizing: border-box;
+        border-top: 2px solid var(--basic-ligth);
+        border-bottom: 2px solid var(--basic-ligth);
+        padding-left: 140px;
+        margin-bottom: 80px;
+        padding-bottom: 44px;
     }
     
     .contact-phone {
@@ -325,15 +339,17 @@
     
     .social-web {
         display: flex;
-        align-items: center;
+        gap: 9px;
         list-style: none;
         padding: 10px;
         margin: 10px;
     }
     
     .contact-discount {
-        display: grid;
-        grid-auto-columns: 1fr;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        text-align: start;
         outline: 5px solid rgba(255, 0, 0, 0.7);
         outline-offset: -5px;
         background-color: var(--basic-yellow);
@@ -349,6 +365,12 @@
         opacity: 90%;
     }
     
+    .filter-item,
+    .grid-legend,
+    .features-legend {
+        border: none;
+    }
+    
     .sort-list {
         font-weight: 700;
         font-style: normal;
@@ -358,38 +380,66 @@
     }
     
     .sort-type {
+        display: flex;
+        justify-content: space-evenly;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        text-align: center;
         margin: -40px 20px;
-        outline: 5px solid rgb(255, 0, 212);
-        outline-offset: -5px;
+        /* outline: 5px solid rgb(255, 0, 212);
+        outline-offset: -5px; */
     }
     
     .sort-height {
-        text-align: end;
-        padding: -30px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 18px;
+        padding-right: 106px;
     }
     
     .examples-work {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: min-content 1fr;
         column-gap: 42px;
+        padding-left: 540px;
         align-items: stretch;
         outline: 5px solid rgba(0, 255, 255, 0.7);
         outline-offset: -5px;
     }
     
     .general-pagination {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 11px;
+        padding-left: 540px;
+        border-radius: 3px;
         align-items: stretch;
-        outline: 5px solid rgba(0, 255, 255, 0.7);
-        outline-offset: -5px;
+        /*outline: 5px solid rgba(0, 255, 255, 0.7);
+        outline-offset: -5px;  */
+    }
+    
+    .page-active {
+        width: 50px;
+        height: 50px;
+        padding-top: 15px;
+        text-align: center;
+        background-color: var(--basic-white);
+        border: 3px solid var(--basic-pagination-first);
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    .pagination-page {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        padding-top: 15px;
+        box-sizing: border-box;
+        background-color: var(--basic-white);
+        border: 3px solid var(--basic-pagination-first);
+        background-color: var(--basic-ligth);
     }
     
     .catalog-popup-caption {
@@ -404,8 +454,6 @@
     .general-pagination,
     .grid-option,
     .checkbox-option,
-    .sort-list-up,
-    .sort-list-down,
     .sort-type,
     .sort-height {
         list-style: none;
