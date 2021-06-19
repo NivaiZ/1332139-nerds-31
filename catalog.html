@@ -29,23 +29,26 @@
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
             <a class="basket" href="blank.html">Корзина</a>
+
         </nav>
 
     </header>
     <!--main-->
-    <main>
-        <h1 class="main-heading">Магазин готовых шаблоннов</h1>
+    <main class="page-main">
+        <div class="main-wrapper">
+            <h1 class="main-heading">Магазин готовых шаблоннов</h1>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-item">
                 <legend class="wrapper-legend-group">Стоимость:</legend>
-
-                <label>От:
+                <!--<label>От:
           <input class="min-price" type="number" name="min-price" value="0">
         </label>
 
                 <label>До:
           <input class="max-price" type="number" name="max-price" value="15000">
-        </label>
+        </label>  -->
+
 
             </fieldset>
 
@@ -218,43 +221,49 @@
             </ul>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
 
         <section class="contacts">
             <h2>NЁRDS DESIGN STUDIO</h2>
+            <img src="img/footer/map.jpg" width="1440" height="416" alt="Месторасположение студии">
             <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
             <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
             <a class="button" href="blank.html">Напишите нам</a>
         </section>
 
-        <section class="contact-discount">
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-            <ul class="social-web">
-                <li class="social web-group">
-                    <a class="social-button" href="#">
-                        <img src="img/footer/vkicon.svg" width="26" height="15" alt="Иконка Вконтакте">
-                    </a>
-                </li>
+        <section class="contact-discount ">
+            <div class="discount-wrapper">
+                <div class="centeral-wrapper">
+                    <h2>Давайте дружить, это выгодно!</h2>
+                    <p class="centeral-text">Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+                <ul class="social-web">
+                    <li class="social web-group">
+                        <a class="social-button" href="#">
+                            <img src="img/footer/vkicon.svg" width="26" height="15" alt="Иконка Вконтакте">
+                        </a>
+                    </li>
 
-                <li class="social web-group">
-                    <a class="social-button" href="#">
-                        <img src="img/footer/fbicon.svg" width="12" height="22" alt="Иконка Фейсбука">
-                    </a>
-                </li>
+                    <li class="social web-group">
+                        <a class="social-button" href="#">
+                            <img src="img/footer/fbicon.svg" width="12" height="22" alt="Иконка Фейсбука">
+                        </a>
+                    </li>
 
-                <li class="social web-group">
-                    <a class="social-button" href="#">
-                        <img src="img/footer/instaicon.svg" width="21" height="21" alt="Иконка Инстаграма">
-                    </a>
-                </li>
-            </ul>
+                    <li class="social web-group">
+                        <a class="social-button" href="#">
+                            <img src="img/footer/instaicon.svg" width="21" height="21" alt="Иконка Инстаграма">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
+
     </footer>
 
     <h2 class="wrapper-hidden">Модальное окно</h2>
-    <section class="modal">
-        <button class="modal-close button-close" type="button">Закрыть</button>
+    <section class="modal container">
+
         <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
 
             <label for="appointment-name">Ваше имя:</label>
@@ -267,7 +276,7 @@
             <textarea id="appointment-text" name="appointment-text" placeholder="В свободной форме"></textarea>
 
             <button class="button" type="submit">Отправить</button>
-
+            <button class="modal-close button-close" type="button">Закрыть</button>
         </form>
     </section>
 </body>
