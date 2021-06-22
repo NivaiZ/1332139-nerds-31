@@ -37,29 +37,39 @@
 
     <!--main-->
     <main class="page-main">
-        <h1 class="wrapper-hidden">Сайт дизайн-студии Нёрдс</h1>
         <section class="slider">
             <div class="container">
-                <ul class="slider-list">
-                    <li class="slider-group">
-                        <p class="slider-big">Долго, дорого, скрупулезно</p>
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a class="button-wrapper-content button" href="blank.html">Узнать больше</a>
-                    </li>
+                <h2 class="wrapper-hidden">Сайт дизайн-студии Нёрдс</h1>
+                    <div class="slider-control control-slider">
+                        <button class="slider-buttons wrapper-buttons" aria-label="1"></button>
+                        <button class="slider-buttons" aria-label="2"></button>
+                        <button class="slider-buttons" aria-label="3"></button>
+                    </div>
+                    <ul class="slider-list">
+                        <li class="slider-group which-slider slider-group-current">
+                            <div class="slide-content">
+                                <p class="slider-big">Долго, дорого, скрупулезно</p>
+                                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                                <a class="button-wrapper-content button" href="blank.html">Узнать больше</a>
 
-                    <li class="slider-group">
-                        <p class="slider-big">Любим математику как никто другой
-                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                        </li>
+
+                        <li class="slider-group which-slider slider-group-hidden">
+                            <p class="slider-big">Любим математику как никто другой
+                                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                                <a class="button-wrapper-content button" href="blank.html">Узнать больше</a>
+
+                        </li>
+
+                        <li class="slider-group which-slider slider-group-hidden">
+                            <p class="slider-big">Только ночь,только хардкор</p>
+                            <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
                             <a class="button-wrapper-content button" href="blank.html">Узнать больше</a>
 
-                    </li>
-                    <li class="slider-group">
-                        <p class="slider-big">Только ночь,только хардкор</p>
-                        <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-                        <a class="button-wrapper-content button" href="blank.html">Узнать больше</a>
-                    </li>
-                </ul>
-                <div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div>
         </section>
 
         <section class="slider-wrapper-service container">
@@ -149,18 +159,17 @@
     </main>
 
     <footer class="page-footer container">
-
-        <section class="contacts">
-            <h2>NЁRDS DESIGN STUDIO</h2>
-
+        <section class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d998.4234429749197!2d30.316330751685733!3d59.96786328029776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624301443141!5m2!1sru!2sru" width="1440"
                 height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-            <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-            <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <a class="button" href="blank.html">Напишите нам</a>
+            <div class="contacts-wrapper wrapper-adress">
+                <p>NЁRDS DESIGN STUDIO</p>
+                <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+                <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+                <a class="button" href="blank.html">Напишите нам</a>
+            </div>
         </section>
-        </div>
+
         <section class="contact-discount">
             <div class="discount-wrapper">
                 <div class="centeral-wrapper">
@@ -190,21 +199,28 @@
     </footer>
 
     <h2 class="wrapper-hidden">Модальное окно</h2>
-    <section class="modal container">
-
+    <section class="modal modal-window">
+        <p class="text-modal-big">Напишите нам</p>
         <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-option">
 
-            <label for="appointment-name">Ваше имя:</label>
-            <input class="login-icon-name" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+                <div class="centeral-flex">
+                    <label class="window-feedback">Ваше имя:</label>
+                    <input class="login-icon-name input-size" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+                </div>
 
-            <label for="appointment-email">Ваш email:</label>
-            <input class="login-icon-email" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
+                <div class="centeral-flex">
+                    <label class="window-feedback" for="appointment-email">Ваш email:</label>
+                    <input class="login-icon-email input-size" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
+                </div>
 
-            <label for="appointment-text">Текст письма:</label>
-            <textarea id="appointment-text" name="appointment-text" placeholder="В свободной форме"></textarea>
-
-            <button class="button" type="submit">Отправить</button>
-            <button class="modal-close button-close" type="button">Закрыть</button>
+                <div class="centeral-flex">
+                    <label class="window-feedback" for="appointment-text">Текст письма:</label>
+                    <textarea id="appointment-text input-size" name="appointment-text" placeholder="В свободной форме" rows="5"></textarea>
+                </div>
+            </div>
+            <button class="button modal-button" type="submit">Отправить</button>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
     </section>
 </body>
