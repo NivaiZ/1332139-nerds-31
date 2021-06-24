@@ -43,10 +43,9 @@
     
     .container {
         width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
     
     .wrapper-heading {
@@ -65,7 +64,6 @@
     .termin-group {
         font-size: 45px;
         font-weight: 700;
-        line-height: 64px;
         line-height: 64px;
     }
     
@@ -109,16 +107,16 @@
         animation: fade-in 1.5s;
     }
     
-    .which-slider:nth-child(1) {
-        background-image: url(/img/slider/slide1.jpg);
+    .slider-group-1 {
+        background-image: url(img/slider/slide1.png);
     }
     
-    .which-slider:nth-child(2) {
-        background-image: url(/img/slider/slide2.jpg);
+    .slider-group-2 {
+        background-image: url(img/slider/slide2.png);
     }
     
-    .which-slider:nth-child(3) {
-        background-image: url(/img/slider/slide3.jpg);
+    .slider-group-3 {
+        background-image: url(img/slider/slide3.png);
     }
     
     .slide-content {
@@ -206,11 +204,8 @@
         position: relative;
         width: 15px;
         height: 11px;
-        content: '';
-        background-position: 0 0;
-        background-image: url(img/header/basket.svg);
-        background-repeat: no-repeat;
-        padding-left: 40px;
+        content: url(img/header/basket.svg);
+        padding-right: 25px;
     }
     
     .slider-list {
@@ -406,8 +401,8 @@
     }
     
     .lever-group {
-        font-weight: 400px;
-        font-style: 16px;
+        font-weight: 400;
+        font-size: 16px;
         line-height: 18px;
     }
     
@@ -450,19 +445,32 @@
         text-decoration: none;
     }
     
-    .wrapper-adress {
-        position: relative;
+    .contacts-wrapper {
         box-sizing: border-box;
         padding: 48px 48px 48px 50px;
         width: 319px;
         min-height: 310px;
         background-color: var(--basic-white);
-        top: -390px;
+    }
+    
+    .wrapper-adress {
+        top: 2700px;
+        position: absolute;
+        bottom: 54px;
+        left: 120px;
     }
     
     .wrapper-hidden {
         visibility: hidden;
         position: absolute;
+    }
+    
+    .map-size {
+        padding-top: 80px;
+    }
+    
+    .map-size iframe {
+        width: 100%;
     }
     
     .general-heading {
@@ -522,7 +530,6 @@
         background-color: var(--basic-white);
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
         width: 960px;
-        height: 590px;
     }
     
     .text-modal-big {
@@ -574,7 +581,7 @@
         transition: opacity .3s ease-in-out;
         border: 0;
         outline: 0;
-        background-image: url(/img/modal/closered.svg);
+        background-image: url(img/modal/closered.svg);
         background-color: transparent;
     }
     

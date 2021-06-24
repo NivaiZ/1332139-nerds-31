@@ -229,20 +229,28 @@
             </section>
         </div>
     </main>
-    <footer class="page-footer container">
+    <footer class="page-footer">
 
-        <section class="contacts">
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <img src="img/footer/map.jpg" width="1440" height="416" alt="Месторасположение студии">
-            <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-            <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <a class="button" href="blank.html">Напишите нам</a>
+        <section class="map">
+            <div class="map-size">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d998.4234429749197!2d30.316330751685733!3d59.96786328029776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624301443141!5m2!1sru!2sru" width="1440"
+                    height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
 
-        <section class="contact-discount ">
+        <section class="contacts-adress">
+            <div class="contacts-wrapper wrapper-adress">
+                <p>NЁRDS DESIGN STUDIO</p>
+                <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+                <p>Телефон: <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+                <a class="button" href="blank.html">Напишите нам</a>
+            </div>
+        </section>
+
+        <section class="contact-discount">
             <div class="discount-wrapper">
                 <div class="centeral-wrapper">
-                    <h2>Давайте дружить, это выгодно!</h2>
+                    <p class="general-heading">Давайте дружить, это выгодно!</p>
                     <p class="centeral-text">Скидка 10% для друзей из социальных сетей.</p>
                 </div>
                 <ul class="social-web">
@@ -251,13 +259,11 @@
                             <img src="img/footer/vkicon.svg" width="26" height="15" alt="Иконка Вконтакте">
                         </a>
                     </li>
-
                     <li class="social web-group">
                         <a class="social-button" href="#">
                             <img src="img/footer/fbicon.svg" width="12" height="22" alt="Иконка Фейсбука">
                         </a>
                     </li>
-
                     <li class="social web-group">
                         <a class="social-button" href="#">
                             <img src="img/footer/instaicon.svg" width="21" height="21" alt="Иконка Инстаграма">
@@ -270,21 +276,28 @@
     </footer>
 
     <h2 class="wrapper-hidden">Модальное окно</h2>
-    <section class="modal container">
-
+    <section class="modal modal-window">
+        <p class="text-modal-big">Напишите нам</p>
         <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-option">
 
-            <label for="appointment-name">Ваше имя:</label>
-            <input class="login-icon-name" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+                <div class="centeral-flex">
+                    <label class="window-feedback">Ваше имя:</label>
+                    <input class="login-icon-name input-size" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+                </div>
 
-            <label for="appointment-email">Ваш email:</label>
-            <input class="login-icon-email" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
+                <div class="centeral-flex">
+                    <label class="window-feedback" for="appointment-email">Ваш email:</label>
+                    <input class="login-icon-email input-size" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
+                </div>
 
-            <label for="appointment-text">Текст письма:</label>
-            <textarea id="appointment-text" name="appointment-text" placeholder="В свободной форме"></textarea>
-
-            <button class="button" type="submit">Отправить</button>
-            <button class="modal-close button-close" type="button">Закрыть</button>
+                <div class="centeral-flex">
+                    <label class="window-feedback" for="appointment-text">Текст письма:</label>
+                    <textarea id="appointment-text input-size" name="appointment-text" placeholder="В свободной форме" rows="5"></textarea>
+                </div>
+            </div>
+            <button class="button modal-button" type="submit">Отправить</button>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
     </section>
 </body>
