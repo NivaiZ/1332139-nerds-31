@@ -179,14 +179,24 @@
     }
     
     .site-group:active,
-    .basket:active,
-    .main-header-logo:active {
+    .basket:active {
         opacity: 0.3;
+        border-bottom: 2px solid var(--basic-red);
     }
     
-    .site-group:active,
-    .basket:active {
+    .site-group:hover,
+    .basket:hover {
         color: var(--basic-red);
+    }
+    
+    .site-group {
+        padding-top: 0;
+        padding-bottom: 12px;
+        vertical-align: top;
+    }
+    
+    .site-active {
+        border-bottom: 2px solid var(--basic-red);
     }
     
     .basket {
@@ -488,6 +498,15 @@
         padding-left: 0;
         column-gap: 9px;
         list-style: none;
+    }
+    
+    .social-button:hover {
+        background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+    }
+    
+    .social-button:active {
+        background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+        box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     }
     
     .discount-wrapper {
