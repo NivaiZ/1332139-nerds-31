@@ -39,19 +39,26 @@
             <h1 class="main-heading">Магазин готовых шаблонов</h1>
         </section>
         <div class="main-wrapper container">
-            <form action="https://echo.htmlacademy.ru" method="GET">
+            <form class="form-catalog" action="https://echo.htmlacademy.ru" method="GET">
                 <fieldset class="filter-item">
-
-                    <legend class="wrapper-legend-group">Стоимость:</legend>
-                    <label>От:
-          <input class="min-price" type="number" name="min-price" value="0">
-        </label>
-
-                    <label>До:
-          <input class="max-price" type="number" name="max-price" value="15000">
-        </label>
-
-
+                    <legend>Стоимость:</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min" tabindex="0"></div>
+                            <div class="toggle toggle-max" tabindex="0"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">
+                      от<input type="number" name="min-price" value="0">
+                    </label>
+                            <label class="max-price">
+                      до<input type="number" name="max-price" value="15000">
+                    </label>
+                        </div>
+                    </div>
                 </fieldset>
 
                 <fieldset class="grid-legend">
@@ -59,20 +66,20 @@
                     <legend class="wrapper-legend-group">Сетка:</legend>
                     <ul>
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
-                            <label class="radio-button" for="filter-adaptiv">Адаптивная</label>
+                            <input class="radio-input filter-input" type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
+                            <label class="radio-button button-radio" for="filter-adaptiv">Адаптивная</label>
                         </li>
                     </ul>
                     <ul>
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="fix" id="filter-fix">
+                            <input class="radio-input filter-input" type="radio" name="choose-group" value="fix" id="filter-fix">
                             <label class="radio-button" for="filter-fix">Фиксированная</label>
                         </li>
                     </ul>
 
                     <ul>
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="rubber" id="filter-rubber">
+                            <input class="radio-input filter-input" type="radio" name="choose-group" value="rubber" id="filter-rubber">
                             <label class="radio-button" for="filter-rubber">Резинновая</label>
                         </li>
                     </ul>
@@ -99,25 +106,23 @@
                     <ul>
                         <li class="checkbox-option">
                             <input class="checkbox-input" type="checkbox" name="news" id="filter-news" checked>
-                            <label class="checkbox-button" for="filter-slider">Новости</label>
+                            <label class="checkbox-button" for="filter-news">Новости</label>
                         </li>
                     </ul>
 
                     <ul>
                         <li class="checkbox-option">
                             <input class="checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
-                            <label class="checkbox-button" for="filter-slider">Галерея</label>
+                            <label class="checkbox-button" for="filter-gallery">Галерея</label>
                         </li>
                     </ul>
 
                     <ul>
                         <li class="checkbox-option">
                             <input class="checkbox-input" type="checkbox" name="basket" id="filter-basket">
-                            <label class="checkbox-button" for="filter-slider">Корзина</label>
+                            <label class="checkbox-button" for="filter-basket">Корзина</label>
                         </li>
                     </ul>
-
-
                 </fieldset>
 
                 <button class="show-submit button" type="submit">Показать</button>
