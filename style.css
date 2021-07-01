@@ -928,9 +928,14 @@ a {
 
 /* sort-height */
 
-.arrow-up:active,
-.arrow-down:active {
-    color: greenyellow;
+.arrow-up:hover path,
+.arrow-down:hover path {
+    fill: 166, 166, 166;
+}
+
+.arrow-up:active path,
+.arrow-down:active path {
+    fill-opacity: .5;
 }
 
 .sort-list-center {
