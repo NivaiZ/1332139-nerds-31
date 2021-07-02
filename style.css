@@ -166,6 +166,7 @@ a {
 
 .main-header-logo {
     padding-top: 48px;
+    padding-right: 202px;
     /*outline: 5px solid rgba(2, 219, 248, 0.3);
     outline-offset: -5px; */
 }
@@ -173,7 +174,7 @@ a {
 .main-navigation {
     display: grid;
     grid-template-columns: 160px 760px 160px;
-    column-gap: 45px;
+    column-gap: 40px;
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
@@ -187,7 +188,7 @@ a {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 60px;
     list-style: none;
     font-weight: 500;
@@ -195,8 +196,14 @@ a {
     line-height: 30px;
 }
 
-.site-group:active,
-.basket:active {
+.site-navigation li {
+    margin-left: 44px;
+}
+
+
+/* navigation */
+
+.site-group:active {
     opacity: 0.3;
     border-bottom: 2px solid var(--basic-red);
 }
@@ -213,6 +220,14 @@ a {
 }
 
 .site-active {
+    border-bottom: 2px solid var(--basic-red);
+}
+
+
+/* basket */
+
+.basket:active {
+    opacity: 0.3;
     border-bottom: 2px solid var(--basic-red);
 }
 
@@ -299,6 +314,7 @@ a {
     color: var(--basic-dark);
     width: 260px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 
@@ -338,8 +354,13 @@ a {
 }
 
 .show-submit:active {
-    background-color: var(--basic-shadow-white);
+    background: var(--basic-shadow-white);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
+
+.show-submit:active a {
+    mix-blend-mode: normal;
     opacity: 0.3;
 }
 
@@ -902,7 +923,8 @@ a {
 
 /* sort-type */
 
-.active-price {
+.price-active {
+    color: var(--basic-dark);
     cursor: text;
 }
 
@@ -928,21 +950,42 @@ a {
 
 /* sort-height */
 
-.arrow-up:hover path,
-.arrow-down:hover path {
-    fill: 166, 166, 166;
+.arrow-up {
+    position: relative;
 }
 
-.arrow-up:active path,
-.arrow-down:active path {
-    fill-opacity: .5;
+.arrow-down {
+    position: relative;
+    padding-left: 15px;
+}
+
+.arrow-up::before {
+    content: url(img/catalogmain/icon.svg);
+    position: absolute;
+    top: 2px;
+}
+
+.arrow-down::before {
+    content: url(img/catalogmain/icon.svg);
+    position: absolute;
+    opacity: .2;
+    transform: rotate(180deg);
+    top: -1px;
+}
+
+.arrow-up:active::before,
+.arrow-down:active::before {
+    opacity: 1;
+}
+
+.arrow-up:hover::before,
+.arrow-down:hover::before {
+    opacity: .4;
 }
 
 .sort-list-center {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    min-height: 70px;
 }
 
 .example-list {
@@ -976,7 +1019,7 @@ a {
 
 .sort-height {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     list-style: none;
 }
 
@@ -1041,11 +1084,15 @@ a {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
+
+/* pagination */
+
 .general-pagination {
     display: flex;
     padding-left: 10px;
     flex-wrap: wrap;
     border-radius: 3px;
+    font-weight: 700;
     /*outline: 5px solid rgba(0, 255, 255, 0.7);
         outline-offset: -5px;  */
 }
@@ -1057,23 +1104,45 @@ a {
 .page-active {
     width: 50px;
     height: 50px;
-    padding-top: 15px;
+    padding-top: 12px;
     text-align: center;
     background-color: var(--basic-white);
+    background-color: var(--basic-ligth);
     border: 3px solid var(--basic-pagination-first);
     box-sizing: border-box;
     border-radius: 3px;
+    margin-right: 11px;
+}
+
+.active-page-one {
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.page-active:hover,
+.pagination-page:hover {
+    background-color: var(--basic-extra-white);
+}
+
+.page-active:active,
+.pagination-page:active {
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+    mix-blend-mode: normal;
+    opacity: 0.3;
 }
 
 .pagination-page {
     text-align: center;
     width: 50px;
     height: 50px;
-    padding-top: 15px;
+    padding-top: 12px;
     box-sizing: border-box;
     background-color: var(--basic-white);
-    border: 3px solid var(--basic-pagination-first);
     background-color: var(--basic-ligth);
+    margin-right: 11px;
 }
 
 .general-pagination {
