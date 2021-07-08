@@ -172,6 +172,8 @@ a {
 .main-header-logo {
     padding-top: 48px;
     padding-right: 202px;
+    width: 160px;
+    height: 65px;
     /*outline: 5px solid rgba(2, 219, 248, 0.3);
     outline-offset: -5px; */
 }
@@ -185,15 +187,11 @@ a {
     text-transform: uppercase;
 }
 
-.main-header-logo:hover {
-    color: var(--basic-special);
-    opacity: 0.7;
-}
-
 .site-navigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0;
     padding-top: 60px;
     padding-right: 40px;
     padding-left: 0px;
@@ -237,14 +235,18 @@ a {
 .basket:active {
     opacity: 0.3;
     border-bottom: 2px solid var(--basic-red);
+    padding-top: 5px;
+    padding-bottom: 0;
+    width: 115px;
 }
 
 .basket {
-    margin-top: 75px;
+    margin-top: 76px;
     text-align: right;
     line-height: 30px;
     list-style: none;
     font-weight: 500;
+    margin-bottom: 0;
     /*outline: 5px solid rgba(2, 27, 248, 0.3);
     outline-offset: -5px; */
 }
@@ -414,11 +416,16 @@ a {
     outline-offset: -5px;  */
 }
 
+.arrangement-wrapper {
+    padding-top: 39px;
+}
+
 .worth-description-title {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 32px;
+    margin-top: 73px;
 }
 
 .worth-description-text {
@@ -427,6 +434,15 @@ a {
     margin-bottom: 40px;
     color: var(--basic-extra-dark);
     list-style: none;
+}
+
+.worth-description-table {
+    padding-top: 15px;
+    padding-bottom: 23px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 700;
 }
 
 .worth-list {
@@ -533,22 +549,23 @@ a {
 
 .contacts-adress {
     position: absolute;
-    z-index: 30;
-    top: -8px;
-    right: 0;
+    z-index: 20;
     left: 0;
 }
 
 .wrapper-adress {
     line-height: 18px;
     box-sizing: border-box;
-    width: 319px;
-    margin-top: 55px;
-    padding-top: 47px;
-    padding-right: 50px;
-    padding-bottom: 45px;
-    padding-left: 50px;
+    padding: 48px 48px 48px 50px;
+    width: 318px;
+    min-height: 310px;
     background-color: var(--basic-white);
+}
+
+.studio {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .wrapper-hidden {
