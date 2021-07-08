@@ -58,16 +58,22 @@ a {
 }
 
 .wrapper-heading {
-    font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 26px;
+    padding-bottom: 16px;
     text-transform: uppercase;
-    padding-top: 1px;
+    margin: 9px;
 }
 
 .slider-wrapper-service p {
     width: 280px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.slider-wrapper-list {
+    padding-bottom: 22px;
 }
 
 .wrapper-discount {
@@ -78,10 +84,15 @@ a {
 
 .termin-group {
     margin-left: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
+}
+
+.termin-group sup {
+    font-size: 26px;
+    line-height: 26px;
 }
 
 
@@ -278,6 +289,9 @@ a {
 }
 
 .slider-big {
+    margin-top: 13px;
+    margin-bottom: 26px;
+    font-size: 55px;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -292,12 +306,16 @@ a {
 .slider-wrapper-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;
     text-decoration: none;
     list-style: none;
-    margin-right: 89px;
+    padding: 0;
+    margin: 0;
     /*outline: 5px solid rgb(182, 248, 1);
     outline-offset: -5px;  */
+}
+
+.button-wrapper-content {
+    margin-top: 35px;
 }
 
 
@@ -391,6 +409,13 @@ a {
 .button:active {
     color: rgba(255, 255, 255, .3);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.portfolio-group {
+    display: flex;
+    justify-content: center;
+    opacity: .2;
+    transition: opacity .6s ease-in-out;
 }
 
 .portfolio-group:hover {
@@ -550,7 +575,15 @@ a {
 .contacts-adress {
     position: absolute;
     z-index: 20;
-    left: 0;
+    left: 120px;
+    top: 54px;
+}
+
+.text-studio {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 24px;
 }
 
 .wrapper-adress {
@@ -1118,8 +1151,7 @@ a {
     opacity: 0;
 }
 
-.catalog-template:hover,
-.catalog-template:active {
+.catalog-template:hover {
     opacity: 1;
 }
 
