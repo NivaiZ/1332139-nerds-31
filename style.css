@@ -248,7 +248,6 @@ a {
     border-bottom: 2px solid var(--basic-red);
     padding-top: 5px;
     padding-bottom: 0;
-    width: 115px;
 }
 
 .basket {
@@ -776,6 +775,14 @@ a {
     opacity: 90%;
 }
 
+.main-header-logo:hover {
+    opacity: 0.7;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
 .intro {
     padding-top: 94px;
     padding-bottom: 123px;
@@ -989,12 +996,13 @@ a {
     height: 23px;
 }
 
-.sort-list {
+.sort-list,
+.filter-item legend {
     font-weight: 700;
-    font-style: normal;
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -1165,6 +1173,7 @@ a {
 
 .general-pagination {
     display: flex;
+    text-align: center;
     padding-left: 10px;
     flex-wrap: wrap;
     border-radius: 3px;
@@ -1226,6 +1235,17 @@ a {
     font-size: 18px;
     line-height: 30px;
     align-items: center;
+    text-transform: uppercase;
+}
+
+.catalog-popup-caption:hover {
+    color: var(--basic-red);
+}
+
+.catalog-popup-caption:active {
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    color: var(--basic-dark);
 }
 
 .checkbox-option {
