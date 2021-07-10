@@ -884,6 +884,7 @@ a {
     font-family: inherit;
     font-size: inherit;
     text-transform: uppercase;
+    -webkit-appearance: none;
 }
 
 .price-controls {
@@ -1158,6 +1159,15 @@ a {
     text-align: center;
     background-color: var(--basic-grey-bg);
     opacity: 0;
+}
+
+.template-wrapper {
+    opacity: 1;
+}
+
+.catalog-wrapper {
+    border-top-color: #444;
+    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
 }
 
 .catalog-item:hover .catalog-template {
