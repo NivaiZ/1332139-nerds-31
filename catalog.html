@@ -64,61 +64,61 @@
                 <fieldset class="filter-item">
 
                     <legend class="wrapper-legend-group">Сетка:</legend>
-                    <ul class="centeral-wrapper">
+                    <ul class="centeral-wrapper-grid">
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
+                            <input class="radio-input visually-hidden" type="radio" name="choose-group" value="adapvtiv" id="filter-adaptiv" checked>
                             <label class="radio-button button-radio" for="filter-adaptiv">Адаптивная</label>
                         </li>
 
 
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="fix" id="filter-fix">
+                            <input class="radio-input visually-hidden" type="radio" name="choose-group" value="fix" id="filter-fix">
                             <label class="radio-button button-radio" for="filter-fix">Фиксированная</label>
                         </li>
 
 
 
                         <li class="grid-option">
-                            <input class="radio-input" type="radio" name="choose-group" value="rubber" id="filter-rubber" disabled>
-                            <label class="radio-button button-radio" for="filter-rubber">Резинновая</label>
+                            <input class="radio-input visually-hidden" type="radio" name="choose-group" value="rubber" id="filter-rubber" disabled>
+                            <label class="radio-button button-radio" for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
 
                 </fieldset>
 
-                <fieldset class="filter-item">
+                <fieldset class="filter-item-button">
 
-                    <legend class="wrapper-legend-group">Особенности:</legend>
-                    <ul>
+                    <legend class="wrapper-legend-grid">Особенности:</legend>
+                    <ul class="centeral-wrapper-legend">
                         <li class="checkbox-option">
-                            <input class="checkbox-input" type="checkbox" name="slider" id="filter-slider" checked disabled>
+                            <input class="checkbox-input visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                             <label class="checkbox-button button-checkbox" for="filter-slider">Слайдер</label>
                         </li>
 
 
 
                         <li class="checkbox-option">
-                            <input class="checkbox-input" type="checkbox" name="advantages" id="filter-advantages">
+                            <input class="checkbox-input visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
                             <label class="checkbox-button button-checkbox" for="filter-advantages">Блок преимуществ</label>
                         </li>
 
 
 
                         <li class="checkbox-option">
-                            <input class="checkbox-input" type="checkbox" name="news" id="filter-news" checked>
+                            <input class="checkbox-input visually-hidden" type="checkbox" name="news" id="filter-news" checked disabled>
                             <label class="checkbox-button button-checkbox" for="filter-news">Новости</label>
                         </li>
 
 
 
                         <li class="checkbox-option">
-                            <input class="checkbox-input" type="checkbox" name="gallery" id="filter-gallery">
+                            <input class="checkbox-input visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                             <label class="checkbox-button button-checkbox" for="filter-gallery">Галерея</label>
                         </li>
 
 
 
-                        <li class="checkbox-option">
+                        <li class="checkbox-option visually-hidden">
                             <input class="checkbox-input" type="checkbox" name="basket" id="filter-basket">
                             <label class="checkbox-button button-checkbox" for="filter-basket">Корзина</label>
                         </li>
@@ -225,10 +225,10 @@
                 </ul>
 
                 <ul class="general-pagination">
-                    <li class="page-active"><a>1</a></li>
-                    <li class="pagination-page"><a href="blank.html">2</a></li>
-                    <li class="pagination-page"><a href="blank.html">3</a></li>
-                    <li class="show-submit button"><a href="blank.html">Следующая</a></li>
+                    <li class="pagination-page"><a class="pagination-current button-pagination button ">1</a></li>
+                    <li class="pagination-page"><a class="button-pagination color-pagination-button button" href="#">2</a></li>
+                    <li class="pagination-page"><a class="button-pagination color-pagination-button button" href="#">3</a></li>
+                    <li class="show-submit button"><a href="#">Следующая</a></li>
                 </ul>
             </section>
         </div>

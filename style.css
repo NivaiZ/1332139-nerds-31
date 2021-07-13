@@ -157,16 +157,36 @@ a {
 .button {
     background-color: var(--basic-red);
     color: var(--basic-white);
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 16px 40px;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+.price-button {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     display: block;
-    max-width: 240px;
+    max-width: 200px;
     padding: 16px 0;
     text-align: center;
     text-transform: uppercase;
     border-radius: 3px;
     border: none;
+    margin-left: 25px;
 }
 
 
@@ -353,6 +373,8 @@ a {
     width: 260px;
     cursor: pointer;
     font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
 }
 
 
@@ -623,7 +645,7 @@ a {
 }
 
 .general-heading {
-    margin-top: 4px;
+    margin-top: 11px;
     margin-bottom: 10px;
     font-size: 36px;
     font-weight: 700;
@@ -663,7 +685,7 @@ a {
     width: 100%;
 }
 
-.centeral-wrapper {
+.centeral-wrapper-grid {
     order: 1;
     display: flex;
     flex-direction: column;
@@ -765,6 +787,13 @@ a {
     line-height: 18px;
 }
 
+.centeral-wrapper {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
 
 /* catalog */
 
@@ -784,8 +813,9 @@ a {
 }
 
 .intro {
-    padding-top: 94px;
-    padding-bottom: 123px;
+    padding-top: 74px;
+    padding-bottom: 142px;
+    padding-left: 20px;
     background-color: var(--basic-grey-bg);
 }
 
@@ -800,9 +830,14 @@ a {
     border: none;
 }
 
+.filter-item-button {
+    margin: 0 0 79px;
+    padding: 10px 0;
+    border: none;
+}
+
 .main-heading {
     margin: 0;
-    padding: 0;
     color: var(--basic-dark);
     font-weight: 500;
     font-size: 55px;
@@ -813,18 +848,25 @@ a {
 }
 
 .main-wrapper legend {
+    font-size: 18px;
+    line-height: 30px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
     text-transform: uppercase;
     padding-bottom: 24px;
+    padding: 0;
+    margin: 0;
 }
 
 .form-catalog {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 260px;
+}
+
+.range-filter {
+    margin-top: 38px;
+    margin-bottom: 12px;
 }
 
 .range-controls {
@@ -884,12 +926,11 @@ a {
     font-family: inherit;
     font-size: inherit;
     text-transform: uppercase;
-    -webkit-appearance: none;
 }
 
 .price-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .price-controls label {
@@ -900,11 +941,15 @@ a {
     text-transform: uppercase;
 }
 
+.max-price {
+    padding-left: 27px;
+}
+
 
 /* fieldset */
 
-.grid-legend ul,
-.features-legend ul {
+.centeral-wrapper-grid,
+.centeral-wrapper-legend {
     display: grid;
     row-gap: 16px;
     margin: 0;
@@ -912,9 +957,9 @@ a {
     list-style: none;
 }
 
-.grid-option,
-.checkbox-option {
-    padding-bottom: 16px;
+.grid-option {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -922,24 +967,29 @@ a {
 
 .radio-button,
 .checkbox-button {
-    cursor: pointer;
     position: relative;
-    padding-left: 11px;
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
     min-height: 25px;
     line-height: 20px;
-    text-align: center;
 }
 
-.radio-input,
-.checkbox-input {
+.visually-hidden {
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .radio-input+label::before {
     position: absolute;
-    top: 5px;
-    left: -30px;
     width: 25px;
     height: 25px;
     content: url(img/cataloginputlabel/radiooff.svg);
@@ -965,15 +1015,13 @@ a {
 .radio-input:checked+label::before {
     content: url(img/cataloginputlabel/radioon.svg);
     position: absolute;
-    top: 5px;
-    left: -30px;
     width: 25px;
     height: 25px;
 }
 
 .radio-input:disabled+label,
 .checkbox-input:disabled+label {
-    opacity: .1;
+    opacity: 0.3;
     cursor: not-allowed;
 }
 
@@ -983,8 +1031,6 @@ a {
 .checkbox-input+label::before {
     content: url(img/cataloginputlabel/checkboff.svg);
     position: absolute;
-    top: 5px;
-    left: -30px;
     width: 23px;
     height: 23px;
 }
@@ -992,14 +1038,11 @@ a {
 .checkbox-input:checked+label::before {
     content: url(img/cataloginputlabel/checkboxon.svg);
     position: absolute;
-    top: 5px;
-    left: -30px;
     width: 23px;
     height: 23px;
 }
 
-.sort-list,
-.filter-item legend {
+.sort-list {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -1155,7 +1198,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 8px 60px 42px;
+    padding: 8px 53px 45px;
     text-align: center;
     background-color: var(--basic-grey-bg);
     opacity: 0;
@@ -1184,61 +1227,46 @@ a {
 
 .general-pagination {
     display: flex;
-    text-align: center;
-    padding-left: 10px;
-    flex-wrap: wrap;
-    border-radius: 3px;
-    font-weight: 700;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    cursor: pointer;
     /*outline: 5px solid rgba(0, 255, 255, 0.7);
         outline-offset: -5px;  */
 }
 
 .pagination-page {
-    list-style: none;
+    margin-right: 12px;
 }
 
-.page-active {
-    width: 50px;
-    height: 50px;
-    padding-top: 12px;
-    text-align: center;
+.pagination-current {
     background-color: var(--basic-white);
-    background-color: var(--basic-ligth);
-    border: 3px solid var(--basic-pagination-first);
-    border-radius: 3px;
-    margin-right: 11px;
-    background: rgba(0, 0, 0, 0.0001);
-    border: 3px solid #DBDBDB;
-    box-sizing: border-box;
-    border-radius: 3px;
+    box-shadow: inset 3px 3px 0 #dbdbdb, inset -3px -3px 0 #dbdbdb;
+    cursor: text;
+    color: var(--basic-dark);
 }
 
-.page-active:hover,
-.pagination-page:hover {
-    background-color: var(--basic-extra-white);
-}
-
-.page-active:active,
-.pagination-page:active {
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    border-radius: 3px;
-    mix-blend-mode: normal;
-    opacity: 0.3;
-}
-
-.pagination-page {
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    padding-top: 12px;
-    box-sizing: border-box;
+.pagination-current:hover {
     background-color: var(--basic-white);
-    background-color: var(--basic-ligth);
-    margin-right: 11px;
 }
 
-.general-pagination {
-    list-style: none;
+.color-pagination-button {
+    color: var(--basic-dark);
+    background-color: var(--basic-grey-bg);
+}
+
+.color-pagination-button:hover {
+    background: var(--basic-extra-white);
+    border-radius: 3px;
+}
+
+.color-pagination-button:active {
+    color: rgba(0, 0, 0, .3);
+    background-color: var(--basic-shadow-white);
+}
+
+.button-pagination {
+    padding: 16px 20px;
 }
 
 .catalog-popup-caption {
