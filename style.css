@@ -105,9 +105,22 @@ a {
     height: 18px;
     border: 0;
     border-radius: 50%;
-    background-color: var(--basic-yellow);
+    background-color: var(--basic-white);
     outline: 0;
     cursor: pointer;
+}
+
+.wrapper-buttons::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 37%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
 }
 
 .slider-control {
@@ -120,8 +133,8 @@ a {
 .control-slider {
     position: absolute;
     z-index: 10;
-    left: 50%;
-    bottom: 96px;
+    left: 49%;
+    bottom: 105px;
     transform: translateX(-50%);
 }
 
@@ -130,7 +143,7 @@ a {
     padding-top: 60px;
     padding-bottom: 60px;
     min-height: 430px;
-    background-position: 100% 100%;
+    background-position: 90% -8px;
     background-repeat: no-repeat;
 }
 
@@ -181,12 +194,12 @@ a {
     font-weight: 500;
     display: block;
     max-width: 200px;
-    padding: 16px 0;
+    padding: 14px 0;
     text-align: center;
     text-transform: uppercase;
     border-radius: 3px;
     border: none;
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 
@@ -251,7 +264,7 @@ a {
 
 .site-group {
     padding-top: 0;
-    padding-bottom: 13px;
+    padding-bottom: 17px;
     vertical-align: top;
 }
 
@@ -308,7 +321,7 @@ a {
 }
 
 .slider-big {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 26px;
     font-size: 55px;
     font-weight: 500;
@@ -334,7 +347,8 @@ a {
 }
 
 .button-wrapper-content {
-    margin-top: 35px;
+    margin-top: 20px;
+    padding: 17px 55px;
 }
 
 
@@ -596,8 +610,18 @@ a {
 .contacts-adress {
     position: absolute;
     z-index: 20;
-    left: 120px;
+    left: auto;
     top: 54px;
+}
+
+.contacts-text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
 }
 
 .text-studio {
@@ -627,6 +651,11 @@ a {
     position: absolute;
 }
 
+.button-contacts {
+    margin-top: 23px;
+    padding: 16px 44px;
+}
+
 
 /* map */
 
@@ -645,7 +674,7 @@ a {
 }
 
 .general-heading {
-    margin-top: 11px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 36px;
     font-weight: 700;
@@ -872,10 +901,10 @@ a {
 .range-controls {
     position: relative;
     height: 41px;
-    margin-bottom: 15px;
-    padding-top: 39px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin-bottom: 17px;
+    padding-top: 34px;
+    padding-right: 25px;
+    padding-left: 25px;
     background-color: #f1f1f1;
     border-radius: 5px;
 }
@@ -893,7 +922,7 @@ a {
 
 .range-controls .toggle {
     position: absolute;
-    top: 31px;
+    top: 25px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -910,21 +939,22 @@ a {
 }
 
 .range-controls .toggle-max {
-    left: 155px;
+    left: 164px;
 }
 
 .price-controls input {
+    box-sizing: border-box;
     font-size: 16px;
-    width: 60px;
-    margin-left: 10px;
-    padding: 8px 10px;
+    width: 80px;
+    height: 38px;
+    margin-left: 13px;
+    padding: 0;
     text-align: center;
     color: #283136;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background: #f1f1f1;
     font-family: inherit;
-    font-size: inherit;
     text-transform: uppercase;
 }
 
@@ -942,7 +972,7 @@ a {
 }
 
 .max-price {
-    padding-left: 27px;
+    padding-left: 28px;
 }
 
 
@@ -955,11 +985,6 @@ a {
     margin: 0;
     padding-left: 0;
     list-style: none;
-}
-
-.grid-option {
-    padding: 0;
-    margin: 0;
 }
 
 
@@ -1043,6 +1068,7 @@ a {
 }
 
 .sort-list {
+    margin-right: auto;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -1056,6 +1082,7 @@ a {
 .price-active {
     color: var(--basic-dark);
     cursor: text;
+    padding-left: 48px;
 }
 
 .active-price:active,
@@ -1116,6 +1143,7 @@ a {
 .sort-list-center {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .example-list {
@@ -1135,9 +1163,10 @@ a {
     display: flex;
     font-weight: 400;
     font-size: 14px;
-    padding-left: 206px;
     line-height: 18px;
     list-style: none;
+    margin: 0;
+    padding-left: 0;
     /* outline: 5px solid rgb(255, 0, 212);
         outline-offset: -5px; */
 }
@@ -1154,7 +1183,7 @@ a {
 }
 
 .sort-height li {
-    padding-right: 18px;
+    padding-right: 12px;
 }
 
 .examples-work {
@@ -1272,6 +1301,8 @@ a {
 .catalog-popup-caption {
     font-weight: 700;
     font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     line-height: 30px;
     align-items: center;
     text-transform: uppercase;
