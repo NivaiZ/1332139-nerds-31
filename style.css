@@ -49,6 +49,7 @@ a {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -220,7 +221,8 @@ a {
 
 .main-header-logo {
     padding-top: 48px;
-    padding-right: 151px;
+    padding-right: 17px;
+    margin-left: 18px;
     width: 160px;
     height: 65px;
 }
@@ -239,7 +241,7 @@ a {
     display: flex;
     padding: 0;
     padding-top: 60px;
-    padding-right: 245px;
+    padding-right: 89px;
     list-style: none;
     text-transform: uppercase;
     justify-content: start;
@@ -283,7 +285,7 @@ a {
 
 .basket {
     margin-top: 76px;
-    margin-right: 38px;
+    margin-right: 0;
     text-align: right;
     line-height: 30px;
     list-style: none;
@@ -318,7 +320,6 @@ a {
 .slider-big {
     margin-top: 10px;
     margin-bottom: 26px;
-    font-size: 55px;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -1253,10 +1254,7 @@ a {
     text-align: center;
     background-color: var(--basic-grey-bg);
     opacity: 0;
-}
-
-.template-wrapper {
-    opacity: 1;
+    overflow-y: auto;
 }
 
 .catalog-wrapper {
