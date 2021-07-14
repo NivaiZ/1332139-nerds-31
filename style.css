@@ -231,6 +231,7 @@ a {
 }
 
 .site-navigation {
+    font-weight: 500;
     line-height: 30px;
     display: flex;
     padding: 0;
@@ -490,6 +491,7 @@ a {
 }
 
 .worth-description-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 40px;
@@ -507,6 +509,7 @@ a {
 }
 
 .worth-list {
+    font-weight: 400;
     margin: 0;
     padding-left: 0;
     list-style: none;
