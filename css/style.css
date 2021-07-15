@@ -293,7 +293,7 @@ a {
 
 .basket::before {
     position: relative;
-    content: url(/img/header/basket.svg);
+    content: url("../img/header/basket.svg");
     padding-right: 25px;
 }
 
