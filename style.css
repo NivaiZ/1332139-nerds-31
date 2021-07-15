@@ -27,6 +27,7 @@
     --basic-toggle-border: #cfcfcf;
     --basic-catalog-color: #444;
     --basic-scale-color: #d7dcde;
+    --basic-border-color: #C4C4C4;
 }
 
 a {
@@ -266,7 +267,7 @@ a {
 }
 
 .site-group {
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     vertical-align: top;
 }
 
@@ -341,7 +342,7 @@ a {
 }
 
 .button-wrapper-content {
-    margin-top: 20px;
+    margin-top: 22px;
     padding: 17px 54px;
 }
 
@@ -362,22 +363,16 @@ a {
 .button-colors-web {
     background-color: var(--basic-red);
     width: 160px;
-    padding-top: 17px;
-    padding-bottom: 17px;
 }
 
 .button-colors-app {
     background-color: var(--basic-green);
     width: 160px;
-    padding-top: 17px;
-    padding-bottom: 17px;
 }
 
 .button-colors-presentation {
     background-color: var(--basic-yellow);
     width: 160px;
-    padding-top: 17px;
-    padding-bottom: 17px;
 }
 
 .show-submit {
@@ -501,7 +496,7 @@ a {
     font-size: 45px;
     line-height: 45px;
     margin-bottom: 32px;
-    margin-top: 73px;
+    margin-top: 76px;
 }
 
 .worth-description-text {
@@ -882,6 +877,10 @@ a {
     background-color: var(--basic-grey-bg);
 }
 
+.intro-catalog {
+    margin-bottom: 25px;
+}
+
 .grid-legend,
 .features-legend {
     border: none;
@@ -907,8 +906,8 @@ a {
     line-height: 55px;
     background-color: var(--basic-grey-bg);
     text-align: center;
-    margin-right: -21px;
     margin-top: -5px;
+    margin-left: 13px;
 }
 
 .main-wrapper legend {
@@ -1253,12 +1252,18 @@ a {
     position: relative;
     box-sizing: border-box;
     width: 360px;
-    height: 618px;
+    height: 620px;
     border-top: 40px solid rgba(68, 68, 68, .12);
     border-radius: 5px;
     list-style: none;
     cursor: pointer;
     transition: .6s ease-in-out;
+}
+
+.img-catalog {
+    border: solid var(--basic-border-color) 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .catalog-item::before {
