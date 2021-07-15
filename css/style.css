@@ -327,17 +327,17 @@ a {
 .slider-wrapper-service {
     margin-top: 72px;
     padding-bottom: 80px;
-    margin-right: 142px;
 }
 
 .slider-wrapper-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 76px;
+    gap: 66px;
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: -11px;
 }
 
 .button-wrapper-content {
