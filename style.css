@@ -46,7 +46,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -122,7 +122,7 @@ a {
     content: "";
     box-sizing: border-box;
     position: absolute;
-    left: 37%;
+    left: 35%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 8px;
@@ -141,9 +141,9 @@ a {
 .control-slider {
     position: absolute;
     z-index: 10;
-    left: 49%;
+    left: 51%;
     bottom: 105px;
-    transform: translateX(-50%);
+    transform: translateX(-48%);
 }
 
 .which-slider {
@@ -151,7 +151,7 @@ a {
     padding-top: 60px;
     padding-bottom: 60px;
     min-height: 430px;
-    background-position: 90% -8px;
+    background-position: 110% -8px;
     background-repeat: no-repeat;
 }
 
@@ -222,7 +222,7 @@ a {
 .main-header-logo {
     padding-top: 48px;
     padding-right: 17px;
-    margin-left: 18px;
+    margin-left: 0;
     width: 160px;
     height: 65px;
 }
@@ -241,7 +241,7 @@ a {
     display: flex;
     padding: 0;
     padding-top: 60px;
-    padding-right: 89px;
+    padding-right: 107px;
     list-style: none;
     text-transform: uppercase;
     justify-content: start;
@@ -285,12 +285,10 @@ a {
 
 .basket {
     margin-top: 76px;
-    margin-right: 0;
-    text-align: right;
+    margin-right: -38px;
     line-height: 30px;
     list-style: none;
     font-weight: 500;
-    margin-bottom: 0;
 }
 
 .basket::before {
@@ -335,6 +333,7 @@ a {
 .slider-wrapper-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 76px;
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -343,7 +342,7 @@ a {
 
 .button-wrapper-content {
     margin-top: 20px;
-    padding: 17px 55px;
+    padding: 17px 54px;
 }
 
 .slider-wrapper-list h3 {
@@ -451,6 +450,25 @@ a {
     justify-content: center;
     opacity: .2;
     transition: opacity .6s ease-in-out;
+    margin-top: 0;
+}
+
+.portfolio-barbseshop {
+    margin-top: -17px;
+    margin-bottom: 24px;
+}
+
+.portfolio-pink {
+    margin-top: 4px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    margin-left: 17px;
+}
+
+.portfolio-mishka {
+    margin-top: -9px;
+    margin-bottom: 24px;
+    margin-right: -38px;
 }
 
 .portfolio-group:hover {
@@ -586,8 +604,8 @@ a {
 
 .transfer:after {
     position: absolute;
-    top: -30px;
-    right: -50px;
+    top: -41px;
+    left: 249px;
     bottom: 0;
     width: 2px;
     height: 52px;
@@ -598,8 +616,7 @@ a {
 }
 
 .transfer:last-child:after {
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .contact-phone {
@@ -615,7 +632,7 @@ a {
 }
 
 .contacts-text {
-    margin-top: 9px;
+    margin-top: 0;
     margin-bottom: 24px;
     font-size: 18px;
     font-weight: 700;
@@ -684,7 +701,7 @@ a {
 }
 
 .general-heading {
-    margin-top: 30px;
+    margin-top: 11px;
     margin-bottom: 10px;
     font-size: 36px;
     font-weight: 700;
@@ -860,7 +877,7 @@ a {
 
 .intro {
     padding-top: 74px;
-    padding-bottom: 142px;
+    padding-bottom: 105px;
     padding-left: 20px;
     background-color: var(--basic-grey-bg);
 }
@@ -877,8 +894,8 @@ a {
 }
 
 .filter-item-button {
-    margin: 0 0 79px;
-    padding: 10px 0;
+    margin: 0 0 74px;
+    padding: 16px 0;
     border: none;
 }
 
@@ -890,7 +907,8 @@ a {
     line-height: 55px;
     background-color: var(--basic-grey-bg);
     text-align: center;
-    padding-right: 60px;
+    margin-right: -21px;
+    margin-top: -5px;
 }
 
 .main-wrapper legend {
@@ -905,7 +923,7 @@ a {
 }
 
 .form-catalog {
-    padding-top: 20px;
+    padding-top: 59px;
     padding-bottom: 20px;
     width: 260px;
 }
@@ -1007,13 +1025,21 @@ a {
 
 /* radio-button */
 
-.radio-button,
+.radio-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    min-height: 24px;
+    line-height: 20px;
+}
+
 .checkbox-button {
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 37px;
-    min-height: 25px;
+    min-height: 24px;
     line-height: 20px;
 }
 
@@ -1100,6 +1126,7 @@ a {
     color: var(--basic-dark);
     cursor: text;
     padding-left: 48px;
+    margin: 4px;
 }
 
 .active-price:active,
@@ -1181,6 +1208,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 38px;
 }
 
 .example-list {
