@@ -294,7 +294,8 @@ a {
 
 .basket::before {
     position: relative;
-    content: url("/img/header/basket.svg");
+    content: url(/img/header/basket.svg);
+    display: inline-block;
     padding-right: 25px;
 }
 
