@@ -100,8 +100,8 @@
                             <input class="checkbox-input visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                             <label class="checkbox-button button-checkbox" for="filter-gallery">Галерея</label>
                         </li>
-                        <li class="checkbox-option visually-hidden">
-                            <input class="checkbox-input" type="checkbox" name="basket" id="filter-basket">
+                        <li class="checkbox-option">
+                            <input class="checkbox-input visually-hidden" type="checkbox" name="basket" id="filter-basket">
                             <label class="checkbox-button button-checkbox" for="filter-basket">Корзина</label>
                         </li>
                     </ul>
@@ -131,7 +131,7 @@
                 </div>
                 <h2 class="wrapper-hidden">Готовые шаблоны</h2>
                 <ul class="examples-work">
-                    <li class="catalog-item catalog-wrapper" tabindex="0">
+                    <li class="catalog-item" tabindex="0">
                         <img class="img-catalog" src="img/catalogmain/sedona.jpg" width="358" height="578" alt="Sedona">
                         <div class="catalog-template template-wrapper">
                             <a href="blank.html">
@@ -147,7 +147,7 @@
                             <a href="blank.html">
                                 <h3 class="catalog-popup-caption">Pink app</h3>
                             </a>
-                            <p>Продуктовый лендинг приложения для iOS и Android</p>
+                            <p class="text-simple">Продуктовый лендинг приложения для iOS и Android</p>
                             <a class="price-button button" href="blank.html">9 900 ₽</a>
                         </div>
                     </li>
@@ -157,7 +157,7 @@
                             <a href="blank.html">
                                 <h3 class="catalog-popup-caption">Barbershop</h3>
                             </a>
-                            <p>Мужской салон крутых стрижек</p>
+                            <p class="text-simple">Мужской салон крутых стрижек</p>
                             <a class="price-button button" href="blank.html">9 900 ₽</a>
                         </div>
                     </li>
@@ -167,7 +167,7 @@
                             <a href="blank.html">
                                 <h3 class="catalog-popup-caption">Mishka</h3>
                             </a>
-                            <p>Всё для handmade</p>
+                            <p class="text-simple">Всё для handmade</p>
                             <a class="price-button button" href="blank.html">9 900 ₽</a>
                         </div>
                     </li>
@@ -177,7 +177,7 @@
                             <a href="blank.html">
                                 <h3 class="catalog-popup-caption">A+</h3>
                             </a>
-                            <p>Продуктовый лендинг обучающих курсов</p>
+                            <p class="text-simple">Продуктовый лендинг обучающих курсов</p>
                             <a class="price-button button" href="blank.html">9 900 ₽</a>
                         </div>
                     </li>
@@ -187,7 +187,7 @@
                             <a href="blank.html">
                                 <h3 class="catalog-popup-caption">Кваст</h3>
                             </a>
-                            <p>Промо-сайт производителя крафтового кваса</p>
+                            <p class="text-simple">Промо-сайт производителя крафтового кваса</p>
                             <a class="price-button button" href="blank.html">9 900 ₽</a>
                         </div>
                     </li>
@@ -278,11 +278,11 @@
             <div class="modal-option">
                 <div class="centeral-flex">
                     <label class="window-feedback">Ваше имя:</label>
-                    <input class="login-icon-name input-size" id="appointment-name" type="text" name="name" placeholder="Имя и Фамилия" required>
+                    <input class="login-icon-name input-size" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия" required>
                 </div>
                 <div class="centeral-flex">
                     <label class="window-feedback" for="appointment-email">Ваш email:</label>
-                    <input class="login-icon-email input-size" id="appointment-email" type="email" name="email" placeholder="email@example.ru" required>
+                    <input class="login-icon-email input-size" id="appointment-email" type="email" name="email" placeholder="email@example.com" required>
                 </div>
                 <div class="centeral-flex">
                     <label class="window-feedback">Текст письма:</label>
@@ -293,6 +293,7 @@
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
     </section>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
