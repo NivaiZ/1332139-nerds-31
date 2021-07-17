@@ -4,10 +4,12 @@ const close = modal.querySelector(".modal-close");
 const form = modal.querySelector(".send-us-form");
 const loginIconName = modal.querySelector(".login-icon-name");
 const loginIconEmail = modal.querySelector(".login-icon-email");
-let isStrongeSupport = true;
-let stronge = "";
+let isStorageSupport = true;
+let storage = "";
 try {
-    stronge = localStorage.getItem("email");
+    storage = localStorage.getItem("name");
+    storage = localStorage.getItem("email");
+
 } catch (err) {
     isStrongeSupport = false;
 }
@@ -16,25 +18,32 @@ try {
 button.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.add("modal-show");
-
     loginIconName.focus();
+
+
+    if (stronge) {
+        loginIconName.value = storage;
+        loginIconEmail.value = storage;
+    } else {
+        loginIconName.focus();
+    }
 });
-if (stronge) {
-    loginIconEmail.value = stronge;
-}
 
 close.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.remove("modal-show");
-    modal.classList.add("modal-error");
+    modal.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function(evt) {
     if (!loginIconName.value || !loginIconEmail.value) {
         evt.preventDefault();
+        modal.classList.remove("modal-error");
+        modal.offsetWidth = modal.offsetWidth;
         modal.classList.add("modal-error");
     } else {
         if (isStorageSupport) {
+            localStorage.setItem("name", loginIconName.value);
             localStorage.setItem("email", loginIconEmail.value);
         }
     }
@@ -44,6 +53,7 @@ window.addEventListener("keydown", function(evt) {
         if (modal.classList.contains("modal-show")) {
             evt.preventDefault();
             modal.classList.remove("modal-show");
+            modal.classList.remove("modal-error");
         }
     }
 });
