@@ -4,7 +4,6 @@ const close = modal.querySelector(".modal-close");
 const form = modal.querySelector(".send-us-form");
 const loginIconName = modal.querySelector(".login-icon-name");
 const loginIconEmail = modal.querySelector(".login-icon-email");
-const sliderButton = document.querySelector(".slider-buttons");
 let isStrongeSupport = true;
 let stronge = "";
 try {
