@@ -220,8 +220,8 @@ a {
     justify-content: space-between;
     font-size: 16px;
     line-height: 30px;
+    margin-left: 120px;
     text-transform: uppercase;
-    margin-left: 119px;
 }
 
 .site-navigation {
@@ -749,15 +749,17 @@ a {
     position: fixed;
     box-sizing: border-box;
     z-index: 70;
-    padding: 20px 100px 84px;
+    padding: 6px 100px 84px;
     margin-left: 8px;
-    transform: translate(24%, 29%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--basic-white);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .modal-window {
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 .text-modal-big {
@@ -811,7 +813,7 @@ a {
 .modal-close {
     font-size: 0;
     position: absolute;
-    top: 82px;
+    top: 73px;
     right: 89px;
     width: 21px;
     height: 21px;
@@ -1392,35 +1394,35 @@ a {
 
 @keyframes bounce {
     0% {
-        transform: translateY(-2000px);
+        transform: translate(-50%, -2000px);
     }
     70% {
-        transform: translateY(30px);
+        transform: translate(-50%, 30px);
     }
     90% {
-        transform: translateY(-10px);
+        transform: translate(-50%, -10px);
     }
     100% {
-        transform: translateY(0);
+        transform: translate(-50%);
     }
 }
 
 @keyframes shake {
     0%,
     100% {
-        transform: translateX(0);
+        transform: translate(-50%, -50%);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-        transform: translateX(-10px);
+        transform: translate(-40%, -50%);
     }
     20%,
     40%,
     60%,
     80% {
-        transform: translateX(10px);
+        transform: translate(-60%, -50%);
     }
 }
