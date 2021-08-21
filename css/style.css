@@ -136,7 +136,7 @@ a {
     transform: translateX(-47%);
 }
 
-.which-slider {
+.which-slide {
     box-sizing: border-box;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1070,9 +1070,6 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
     opacity: .4;
     transition: opacity .3s linear;
 }
@@ -1192,14 +1189,14 @@ a {
     transform: rotate(180deg);
 }
 
-.arrow-up:active::before,
-.arrow-down:active::before {
-    opacity: 1;
-}
-
 .arrow-up:hover::before,
 .arrow-down:hover::before {
     opacity: .4;
+}
+
+.arrow-up:active::before,
+.arrow-down:active::before {
+    opacity: 1;
 }
 
 .sort-list-center {
