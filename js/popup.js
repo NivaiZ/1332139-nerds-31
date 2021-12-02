@@ -11,7 +11,7 @@ try {
     storage = localStorage.getItem("email");
 
 } catch (err) {
-    isStrongeSupport = false;
+  isStorageSupport = false;
 }
 
 
@@ -21,7 +21,7 @@ button.addEventListener("click", function(evt) {
     loginIconName.focus();
 
 
-    if (stronge) {
+    if (storage) {
         loginIconName.value = storage;
         loginIconEmail.value = storage;
     } else {
